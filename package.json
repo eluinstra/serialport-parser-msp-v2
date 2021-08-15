@@ -1,0 +1,42 @@
+{
+  "name": "serialport-parser-msp-v2",
+  "version": "1.0.0",
+  "description": "SerialPort MSP V2 parser",
+  "main": "lib",
+  "scripts": {
+    "clean": "del-cli --force lib/*",
+    "build": "tsc",
+    "test": "ts-node -O '{\"module\":\"commonjs\"}' node_modules/jest/bin/jest.js"
+  },
+  "keywords": [
+    "msp",
+    "serialport"
+  ],
+  "contributors": [
+    {
+      "name": "DisruptiveNL"
+    },
+    {
+      "name": "e.luinstra"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eluinstra/serialport-parser-msp-v2.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/rewire": "^2.5.28",
+    "@types/serialport": "^8.0.2",
+    "del-cli": "^4.0.1",
+    "jest": "^27.0.6",
+    "rewire": "^5.0.0",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "serialport": "^9.2.0"
+  }
+}

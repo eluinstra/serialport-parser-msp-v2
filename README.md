@@ -1,3 +1,3 @@
-# SerialPort MSPv2 Parser
+# SerialPort MSP V2 Parser
 
-Multiwii Serial Protocol (MSP) v2
+Parser for Node SerialPort that implements Multiwii Serial Protocol Version 2 according to https://github.com/iNavFlight/inav/wiki/MSP-V2.
