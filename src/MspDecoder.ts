@@ -24,7 +24,7 @@ export class MspDecoder extends Transform {
       this.push(toMspMsg(msgState))
       msgState.state = MspState.MSP_IDLE
     } else if (msgState.state == MspState.MSP_ERROR_RECEIVED) {
-      this.push(new Error())
+      this.push(new Error("MSP Error"))
       msgState.state = MspState.MSP_IDLE
     }
   }

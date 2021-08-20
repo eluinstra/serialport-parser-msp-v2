@@ -17,7 +17,7 @@ export const stringToCharArray = (buffer: string): number[] => Array.from(buffer
 
 const _mspCmdHeader = stringToCharArray(mspCmdHeader);
 
-const encode = ({ cmd, buffer, flag = 0 }: MspMsg): Buffer => {
+export const encode = ({ cmd, buffer, flag = 0 }: MspMsg): Buffer => {
   const result = Buffer.allocUnsafe(_mspCmdHeader.length + 5 + buffer.length + 1);
   _mspCmdHeader.forEach((v, i) => result.writeUInt8(v, i))
   result.writeUInt8(flag, _mspCmdHeader.length)

@@ -36,7 +36,7 @@ test('parseDataBuffer MSP Error', () => {
   parser.write(Buffer.from([0x24, 0x58, 0x21]))
   expect(callback).toBeCalled()
   expect(callback.mock.calls.length).toBe(1)
-  expect(callback.mock.calls[0][0]).toMatchObject(new Error())
+  expect(callback.mock.calls[0][0]).toMatchObject(new Error('MSP Error'))
 })
 
 test.each([

@@ -1,5 +1,5 @@
 import { MspCmd, MspMsg } from './Msp'
-import { MspEncoder } from './MspEncoder'
+import { encode, MspEncoder } from './MspEncoder'
 import { MspDecoder } from './MspDecoder'
 
-export { MspCmd, MspMsg, MspEncoder, MspDecoder }
+export { encode, MspCmd, MspMsg, MspEncoder, MspDecoder }
