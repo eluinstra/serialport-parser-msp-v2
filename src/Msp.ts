@@ -192,6 +192,19 @@ export const MspCmd = {
   MSP_VTXTABLE_BAND:        137,    //out message         vtxTable band/channel data
   MSP_VTXTABLE_POWERLEVEL:  138,    //out message         vtxTable powerLevel data
   MSP_MOTOR_TELEMETRY:      139,    //out message         Per-motor telemetry data (RPM, packet stats, ESC temp, etc.)
+
+  // REMOTE SPECIFIC
+  MSP_SET_PRESS_LOW:        141,    //in message          Sets the low feedbackvalue
+  MSP_SET_PRESS_HIGH:       142,    //in message          Sets the high feedbackvalue
+  MSP_SET_TEMP_LOW:         143,    //in message          Sets the low feedbackvalue
+  MSP_SET_TEMP_HIGH:        144,    //in message          Sets the high feedbackvalue for the steer
+  MSP_READPARAMS:           145,    //in message          Gets the parameters based on the value given
+  MSP_READPVVALUES:         146,    //in message          Gets the process values (live data) based on the index given
+  MSP_READ_TEMP:            147,    //in message          Gets the parameters based on the value given
+  MSP_READ_PRESS:           148,    //in message          Gets the process values (live data) based on the index given
+  MSP_SAVE:                 149,    //in message          Saves the parameters to flash through SMARTFS
+  MSP_GET_TEMP_LOW:         151,    //in message          Gets the low feedbackvalue
+  MSP_GET_TEMP_HIGH:        152,    //in message          Gets the high feedbackvalue
   
   MSP_SET_RAW_RC:           200,    //in message          8 rc chan
   MSP_SET_RAW_GPS:          201,    //in message          fix, numsat, lat, lon, alt, speed
