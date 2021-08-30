@@ -5,9 +5,6 @@ export const MspCmd = {
   MSP_BOARD_INFO:                  4,    //out message *
   MSP_BUILD_INFO:                  5,    //out message *
   
-  MSP_ECHO:                        8,   //in/out message
-  MSP_ECHO_NR:                     9,   //in/out message
-  
   MSP_NAME:                        10,   //out message          Returns user set board name - betaflight
   MSP_SET_NAME:                    11,   //in message           Sets board name - betaflight
   
